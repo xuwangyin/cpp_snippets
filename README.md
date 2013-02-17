@@ -6,7 +6,7 @@ Snippets
 ----------------
 1. [Non-Virtual Interface (Template Method)]()
 2. [Erase-remove idiom]()
-3. [Generate Permutation]()
+3. [Generate Permutation](https://github.com/xuwangyin/cpp_snippets/blob/master/generate_permutation.cpp)
 
 Useful Links
 ----------------
