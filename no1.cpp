@@ -4,8 +4,8 @@ public:
   virtual ~Base() { } // virtual destructor
 private:
   int b;
-  Base(const Base& ); // noncopyable
-  Base& operator=(const Base&); // nonassignable
+  Base(const Base& ); // private make noncopyable
+  Base& operator=(const Base&); // private make nonassignable
 };
 
 
@@ -18,11 +18,11 @@ private:
 int main() {
   Base* b = new Derived;
   // Base b2 = *b; this won't compile, beacause the Base class is
-  // noncopyable, which can prevent the Derived object being slicing down
+  // noncopyable, which can prevent the Derived object being sliced down
 
   Derived* d = new Derived;
   // Base b3 = *b; this won't compile, beacause the Base class is
-  // noncopyable, which can prevent the Derived object being slicing down
+  // noncopyable, which can prevent the Derived object being sliced down
 
   // virtual destrucotr so that the correct destrucotr get invoked
   delete b;
