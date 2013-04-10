@@ -38,4 +38,9 @@ int main() {
   // won't compile
   // bar(f, mem_fn<vector<int>&()>(&Foo::getComponents));
 
+  // even fancier, combine the power of mem_fn with bind
+  // note that the function fancy is just like plan old function
+  auto fancy = bind(mem_fn(&Foo::getComponentsFancy), f);
+  fancy();
+
 }
