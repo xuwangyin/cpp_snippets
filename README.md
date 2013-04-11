@@ -11,6 +11,7 @@ Snippets
 3. [Array Reference](https://github.com/xuwangyin/cpp_snippets/blob/master/array_reference.cpp)
 4. [Merge Sort Implemented Using STL](http://en.cppreference.com/w/cpp/algorithm/inplace_merge)
 5. [Member Function Strategy](https://github.com/xuwangyin/cpp_snippets/blob/master/member_function_strategy.cpp)
+5. [General Purpose Segmentor (or, Subsequence Generator)](https://github.com/xuwangyin/cpp_snippets/blob/master/segment.cpp)
 
 Useful Links
 ----------------
