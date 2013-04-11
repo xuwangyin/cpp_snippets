@@ -7,7 +7,7 @@
 using namespace std;
 
 template <typename ForwardIt, typename ContainerT, typename UnaryPredicate>
-void segment(ForwardIt first, ForwardIt last, ContainerT& tokens, UnaryPredicate p) {
+void segment(ForwardIt first, ForwardIt last, ContainerT& subseqs, UnaryPredicate p) {
 
   // loop invariant: [first, start) is segmented
   ForwardIt start = first;
@@ -15,7 +15,7 @@ void segment(ForwardIt first, ForwardIt last, ContainerT& tokens, UnaryPredicate
     ForwardIt end = std::find_if(start, last, p);
 
     if (start != end)
-      tokens.emplace_back(typename ContainerT::value_type(start, end));
+      subseqs.emplace_back(typename ContainerT::value_type(start, end));
 
     if (end != last) {
       start = end + 1;
