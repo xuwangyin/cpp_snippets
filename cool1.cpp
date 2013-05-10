@@ -1,6 +1,8 @@
 /*
-* inspired by https://github.com/facebook/folly/blob/master/folly/dynamic.h
-* i don't konwn how to name this idom, only knows that it's cool
+* inspired by https://github.com/facebook/folly/blob/master/folly/dynamic.h.
+* It feels like "Iterator pattern" in GOF; the client using Foo::const_iterator 
+* only need to link to Foo once Foo's internal collection changed from vector to list.
+* I will name it "the iterator pattern", how do you like it?
 */
 
 #include <iostream>
